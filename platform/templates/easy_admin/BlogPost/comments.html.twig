@@ -1,0 +1,18 @@
+<table class="table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>content</th>
+            <th>author</th>
+        </tr>
+    </thead>
+    {% for comment in value %}
+    <tr>
+        <td>{{comment.id}}</td>
+        <td>{{ comment.content }}</td>
+        <td>{{ comment.author.name }}</td>
+    </tr>
+
+
+    {% endfor %}
+</table>
